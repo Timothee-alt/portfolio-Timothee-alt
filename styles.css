@@ -13,15 +13,13 @@ body{
     height: 500vh;
     width: 100vw; 
     overflow-x: hidden;
-    background: #3494E6; 
-    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6); 
+    background: #3494E6;  
     background: linear-gradient(to right, #EC6EAD, #3494E6);
 }
 .barre{
     position: sticky;
     padding: 30px;
     background: #3494E6;  
-    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  
     background: linear-gradient(to right, #EC6EAD, #3494E6);
     top: 0px;
     opacity: 1;
@@ -140,7 +138,7 @@ main{
 .portrait-show-on-scroll img {
     display: flex;
     height: 400px;
-    margin-top: 150px;
+    margin-top: 200px;
     margin-left: 50px;
     opacity: 0;
     transform: translateY(100px);
@@ -149,7 +147,7 @@ main{
 
 .portrait-show-on-scroll.visible img {
     height: 400px;
-    margin-top: 150px;
+    margin-top: 200px;
     margin-left: 50px;
     opacity: 1;
     transform: translateY(0);
@@ -271,6 +269,83 @@ main{
     align-items: center;
 }
 
+.php-content{
+    display: flex;
+    align-items: center;
+
+}
+
+.php-item h3{
+    margin-top: 50px;
+    margin-left: 152px;
+}
+
+.competences-plus {
+    display:    flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ligne-bouton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    border-top: 4px solid aliceblue;
+    padding-top: 0;
+    width: 80%;
+    border-radius: 15%;
+}
+
+.voir-plus-btn {
+    display: flex;
+    background-color: aliceblue;
+    color: #3494E6;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: none;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+}
+
+.contenu-cache {
+    display: none;
+    margin-top: 10px;
+    padding: 15px;
+    font-family: "Lora", serif;
+    transition: max-height 0.5s ease;
+}
+
+.cases {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 100px;
+}
+
+.case {
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    color: #3494E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lora", serif;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.case:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
 .mes-projets-show-on-scroll{
     opacity: 0;
     transform: translateY(50px);
@@ -297,7 +372,8 @@ main{
 
 .projets{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -313,4 +389,25 @@ main{
 .projets img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.body_projetI{
+    background: linear-gradient(to right, #EC6EAD, #3494E6);
+}
+
+.projets h2 {
+    color: aliceblue;
+    font-family: "Baskervville SC", serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.projets h3 {
+    color: aliceblue;
+    font-family: "Baskervville SC", serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-top: 5px;
 }

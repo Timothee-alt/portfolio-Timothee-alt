@@ -54,5 +54,16 @@ window.addEventListener('scroll', function() {
     }
 });
 
+function toggleContent() {
+    const content = document.getElementById("contenuCache");
+    const button = document.querySelector(".voir-plus-btn");
 
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "flex";
+        button.textContent = "-";
+    } else {
+        content.style.display = "none";
+        button.textContent = "+";
+    }
+}
 
